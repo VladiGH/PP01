@@ -20,7 +20,7 @@ body{
     background-color: blueviolet;
     font-family: "Poppins", sans-serif;
     margin: 0;
-    min-width: 300px;
+    min-width: 480px;
 }
 .wrapper{
     padding: 0% 10% 0% 10%;
@@ -60,7 +60,7 @@ h1, h2{
 
 }
 .head-container nav ul li{
-    padding-right:5%;
+    padding-right:7%;
 }
 .head-container nav ul li a{
     text-decoration: none;
@@ -336,11 +336,69 @@ footer{
     font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 750) {
-    .logoPag{
-        width: 200px;
-        height: 100px;
+@media only screen and (max-width: 1080px) {
+    .name-left input{
+        width: 350px;
+
+        
+    }
+    .email-right input{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .name-left input{
+        width: 300px;
+        line-height: 2rem;
+        background-color: transparent;
+        
+    }
+    .email-right input{
+        width: 300px;
+        line-height: 2rem;
+        background-color: transparent;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .scnd-sect article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .scnd-side img{
+        width: 200%;
+    }
+    .container-textbox{
+        flex-wrap: wrap;
+
+    }
+    .container-textbox div{
+        padding-top: 5%;
+    }
+    .container-textbox div input{
+        width:500px;
     }
 
+}
+
+@media only screen and (max-width: 750px) {
+    .logoPag{
+        width: 200px;
+        height: 50px;
+    }
+    .scnd-sect article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .scnd-side img{
+        width: 100%;
+    }
+    .Thrd-sect article{
+        display: flex;
+        justify-content: center;
+    }
+    .album{
+        padding: 10% 4% 10% 2%;
+        display: grid;
+        grid-template-columns: 100%;
 
 }
