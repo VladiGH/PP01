@@ -1,0 +1,346 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vw);
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+/*Lobotomized Owls*/
+/*body * + * {
+    margin-top: 1.5em;
+}*/
+body div + div {
+    margin-top: 0;
+}
+body{
+    background-color: blueviolet;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-width: 300px;
+}
+.wrapper{
+    padding: 0% 10% 0% 10%;
+}
+h1, h2{
+    font-family: "Poppins", sans-serif;
+    color: black;
+ }
+.first-section{
+    background-image: url(..//img/wall2.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+.degrad{
+    background-image: -webkit-linear-gradient(0deg, rgb(50, 36, 176) 0%, rgb(190, 94, 222) 100%);
+    opacity: 0.8;
+    z-index: -1;
+}
+.logoPag{
+    width: 400px;
+    height: 100px;
+}
+.head-container nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-container nav ul{
+    list-style-type: none;
+    display: flex;
+    position: initial;
+
+
+}
+.head-container nav ul li{
+    padding-right:5%;
+}
+.head-container nav ul li a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: azure;
+}
+.intro header{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    color: aliceblue;
+}
+.intro header p{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.intro header h1{
+    font-weight: lighter;
+    font-size: 5em;
+    color:aliceblue;
+}
+.buttonStarted{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    border: 1px solid thistle;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    color: aliceblue;
+    
+}
+.buttonStarted:hover{
+    background-image: -webkit-linear-gradient(0deg, #241a83 0%, #3277b4 100%);
+}
+
+.scnd-sect article{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.frst-side{
+    padding: 3% 0% 5% 1%;
+}
+.frst-side h2{
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 2rem;
+    line-height: 1.2em;
+}
+
+.frst-side p{
+    padding-bottom: 5%;
+    font-size: 0.8rem;
+}
+
+.scnd-side{
+    padding: 3% 1% 3% 2%;
+}
+.scnd-side img{
+    width: 500px;
+}
+.scnd-sect article .buttonStarted{
+    background-image: -webkit-linear-gradient(0deg, #241a83 0%, #3277b4 100%);
+}
+
+
+.Thrd-sect article{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("..//img/paralax1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: initial;
+    
+}
+.to-right{
+    width: 50%;
+    padding: 5% 0.5% 10% 0%;
+    color: honeydew;
+}
+.to-right section h2{
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 2rem;
+    line-height: 1.2em;
+    padding-top: 10%;
+    color: azure;
+}
+.to-right section p{
+    font-size: 0.7rem;
+}
+
+.album{
+    padding: 10% 4% 10% 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+    opacity: inherit;
+    position: relative; 
+}
+.album div img{
+    width: 100%;
+    height: 350px;
+   
+}
+.imagen {
+
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    opacity: 0.7;
+  }
+  
+.album div:hover{
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    /*opacity: 10; probar este para efecto que la imagen se mire mejor*/
+}
+
+.contact{
+    background-image: url("..//img/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+.contact .degrad2{
+    background-image: -webkit-linear-gradient(0deg, #3224b0 0%, #be5ede 100%);
+    opacity: 0.9;
+}
+.head-contact{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.head-contact h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: lighter;
+    color: aliceblue;
+}
+.head-contact p{
+    color: aliceblue;
+}
+.container-textbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+::placeholder{
+    color: white;
+}
+.name-left input{
+    width: 450px;
+    line-height: 2rem;
+    background-color: transparent;
+    
+}
+.email-right input{
+    width: 450px;
+    line-height: 2rem;
+    background-color: transparent;
+}
+.comment{
+    padding-top:2%;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    
+}
+.comment input{
+    padding-left: 2%;
+    width: 90%;
+    height: 100%;
+    line-height: 2.2rem;
+    background-color: transparent;
+    
+}
+.bttn-right{
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+.subscribe{
+    background-color: aliceblue;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+.subscribe .buttonStarted{
+    background-image: -webkit-linear-gradient(0deg, #241a83 0%, #3277b4 100%);
+
+}
+.subscribe ::placeholder{
+    color: #777777;
+}
+.subscribe h3{
+    color: black;
+    font-size: 2.5rem;
+    line-height:1.5;
+    font-weight: lighter;
+}
+.subscribe p{
+    padding-top: 3%;
+}
+footer{
+    background-color: #222222;
+    color: white;
+    width: 100%;
+    height: 275px;
+    text-align: center;
+    position: relative;
+}
+.cajita-foot{
+    padding-top: 3%;
+    padding-left: 25%; 
+    padding-bottom: 5%;
+    padding-right:25%;
+}
+.navi ul{
+    list-style-type: none;
+    display: flex;
+    padding-bottom: 3%;
+    justify-content: space-around;
+}
+.navi ul li{
+    font-size: 0.8rem;
+}
+.navi ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 1.5em;
+    
+}
+.navi ul li a:hover{
+    color: #241a83;
+}
+.social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+.social ul li {
+    margin: 3%;
+    font-size: 1rem;    
+}
+.social ul li a{
+    color: aliceblue;
+}
+.social ul li a:hover{
+    color: #241a83;
+}
+.cajita-foot div p{
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 750) {
+    .logoPag{
+        width: 200px;
+        height: 100px;
+    }
+
+
+}
